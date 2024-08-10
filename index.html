@@ -31,9 +31,49 @@
         }
         }
     </style>
+	<script>
+        
+        window.onload=function()
+        {
+            document.getElementById('loadani').style.display="none";
+            document.getElementById('loader').style.display="block";
+        };
+        
+    </script>
+    
+    <style>
+        #loader
+        {
+            display: none
+        };
+        
+/*
+        #loadani
+        {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            
+        }
+*/
+        #loadani img
+        {
+            width: 300px;
+        }
+    </style>
 </head>
 
 <body>
+	<div id="loadani">
+        <img  style="position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0;  width: 300px; height: 300px"src="animation.gif">
+    </div>
+    
+    <div id="loader">
 
 	<div class="preload-bg"></div>
 
@@ -578,6 +618,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20230327195509"></script>
 
 	<script src="js/app.min.js?_v=20230327195509"></script>
+
+    </div>
 </body>
 
 </html>
